@@ -1,0 +1,98 @@
+<!-- <!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+      }
+      #search-input {
+        height: 30px;
+        font-size: 16px;
+        padding: 20px;
+        width: 80%;
+        border: 1px solid black;
+        border-radius: 20px;
+        color: black;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      button{
+        padding: 10px;
+      }
+    </style>
+    <h1>Assitant de recherche</h1>
+    <form action="/search" method="POST">
+      <input
+        id="search-input"
+        type="search"
+        name="query"
+        placeholder="Comment puis-je t'aider"
+      />
+      <button type="submit">Rechercher</button>
+    </form>
+    {% if result %}
+    {{result}}
+    {% endif %}
+  </body>
+</html> -->
+
+<html>
+  <head>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+      }
+      .search {
+        height: 30px;
+        font-size: 20px;
+        padding: 20px;
+        width: 80%;
+        border-radius: 20px;
+        color: black;
+        margin-bottom: 20px;
+      }
+      button {
+        padding: 11px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+      <h1>Assistant Intelligent</h1>
+      <form action="/search" method="GET" enctype="multipart/form-data">
+        <input
+          name="query"
+          class="search"
+          type="text"
+          id="input"
+          placeholder="Comment puis-je t'aider aujourd'hui"
+          style="height: 30px; font-size: 20px"
+        />
+        <!-- <button>Click</button> -->
+        <button type="submit" value="Rechercher">Rechercher</button>
+      </form>
+  </body>
+</html>
