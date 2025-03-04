@@ -8,7 +8,7 @@ from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2
 
 # Modèle ImageNet
 model = MobileNetV2(weights='imagenet')
-img = Image.open("./image.jpg")
+img = Image.open("./image2.jpg")
 # Fonction de prédiction
 def model_predict(img, model):
     img = img.resize((224, 224))
